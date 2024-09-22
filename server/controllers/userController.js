@@ -38,6 +38,8 @@ module.exports.register = async (req, res, next) => {
     return res.json({ status: true, user });
   } catch (ex) {
     next(ex);
+
+    
   }
 };
 
