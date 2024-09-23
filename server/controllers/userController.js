@@ -39,7 +39,7 @@ module.exports.register = async (req, res, next) => {
   } catch (ex) {
     next(ex);
 
-    
+
   }
 };
 
@@ -50,6 +50,8 @@ module.exports.getAllUsers = async (req, res, next) => {
       "username",
       "avatarImage",
       "_id",
+
+      
     ]);
     return res.json(users);
   } catch (ex) {
